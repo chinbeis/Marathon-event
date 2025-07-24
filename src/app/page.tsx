@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <div className="bg-marathonYellow">
       <Head>
-        <title>Run the Race of a Lifetime at Soul Relay 2025!</title>
+        <title>Run the Race of a Lifetime at Soul Relay!</title>
         <meta name="description" content="Join thousands on [Date] in [City]!" />
-        <meta property="og:title" content="Run the Race of a Lifetime at Soul Relay 2025!" />
+        <meta property="og:title" content="Run the Race of a Lifetime at Soul Relay!" />
         <meta property="og:description" content="Join thousands on [Date] in [City]!" />
         <meta property="og:image" content="/assets/marathon-hero.jpg" />
         <link rel="icon" href="/favicon.ico" />
@@ -33,7 +33,7 @@ export default function Home() {
       <Navbar links={navLinks} />
 
       <main>
-        <Hero title="Run the Race of a Lifetime at Soul Relay 2025!" subtitle="Join thousands on [Date] in [City]!" />
+        <Hero title="Run the Race of a Lifetime at Soul Relay!" subtitle="Join thousands on [Date] in [City]!" />
         <div id="about">
           <EventOverview />
         </div>

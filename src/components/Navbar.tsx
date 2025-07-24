@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons';
 
 interface NavbarProps {
@@ -13,9 +14,9 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
     <nav className="sticky top-0 z-50 bg-blue-800 shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-yellow-400">
-            Soul Relay 2025
-          </div>
+          <Link href="/" className="text-2xl font-bold text-yellow-400">
+            Soul Relay
+          </Link>
           <div className="hidden md:flex space-x-8">
             {links.map((link) => (
               <a

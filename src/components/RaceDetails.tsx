@@ -54,11 +54,11 @@ const RaceDetails: React.FC = () => {
           </div>
         </div>
         <div className="mt-12">
-          <h3 className="text-2xl font-bold text-center text-blue-800 mb-4">Course Map</h3>
+          <h3 className="text-2xl font-bold text-center text-blue-800 mb-4"></h3>
           <Image src="/course-map.jpg" alt="Course Map" width={1200} height={800} className="w-full h-auto object-cover rounded-lg shadow-lg" />
         </div>
         <div className="mt-12">
-          <h3 className="text-3xl font-bold text-center text-blue-800 mb-8">Race History</h3>
+          <h3 className="text-3xl font-bold text-center text-blue-800 mb-8">My Race History</h3>
           <div className="text-center mb-8">
             <p className="text-lg text-gray-700">In the last 10 years, the total distance run in ultra races is <span className="font-bold text-yellow-500">22,262 km</span>, including <span className="font-bold text-yellow-500">527</span> marathons.</p>
           </div>
