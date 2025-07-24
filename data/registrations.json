@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1753331529405",
+    "firstName": "Test1",
+    "lastName": "test1",
+    "phone": "72135630",
+    "email": "72135630@gmail.com",
+    "registrationDate": "2025-07-24T04:32:09.405Z",
+    "verified": true
+  },
+  {
+    "id": "1753331631807",
+    "firstName": "test2",
+    "lastName": "test2",
+    "phone": "88888888",
+    "email": "88888888@gmail.com",
+    "registrationDate": "2025-07-24T04:33:51.807Z",
+    "verified": true
+  },
+  {
+    "id": "1753331877349",
+    "firstName": "test3",
+    "lastName": "test3",
+    "phone": "72135631",
+    "email": "72135631@gmail.com",
+    "registrationDate": "2025-07-24T04:37:57.349Z",
+    "verified": false
+  }
+]

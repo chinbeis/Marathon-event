@@ -51,17 +51,17 @@ const RegistrationCTA: React.FC = () => {
   });
 
   return (
-    <section id="register" className="bg-marathonBlue py-12 text-center">
+    <section id="register" className="bg-yellow-400 py-12 text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-white">Sign Up Today!</h2>
-        <p className="text-lg text-white mt-2">Early Bird Pricing Ends [Date]</p>
+        <h2 className="text-3xl font-bold text-blue-800">Sign Up Today!</h2>
+        <p className="text-lg text-blue-800 mt-2">Early Bird Pricing Ends [Date]</p>
         <div className="mt-4">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
         </div>
         <a
-          href="#register"
-          className="mt-8 inline-block bg-marathonYellow text-marathonBlue font-bold py-3 px-8 rounded-full hover:bg-white hover:text-marathonBlue transition-colors duration-300 shadow-lg animate-pulse"
+          href="/payment"
+          className="mt-8 inline-block bg-blue-800 text-white font-bold py-3 px-8 rounded-full hover:bg-red-700 hover:text-white transition-colors duration-300 shadow-lg animate-pulse"
         >
           Sign Up Today!
         </a>

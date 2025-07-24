@@ -5,25 +5,26 @@ import EventOverview from '@/components/EventOverview';
 import RaceDetails from '@/components/RaceDetails';
 import RegistrationCTA from '@/components/RegistrationCTA';
 import Testimonials from '@/components/Testimonials';
-import Sponsors from '@/components/Sponsors';
+import AboutUs from '@/components/AboutUs';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
 export default function Home() {
   const navLinks = [
-    { label: 'Home', href: '#' },
+    { label: 'Home', href: '/' },
     { label: 'About', href: '#about' },
     { label: 'Register', href: '#register' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Contact', href: '#contact' },
+    { label: 'Payment', href: '/payment' },
   ];
 
   return (
-    <div className="bg-marathonLight">
+    <div className="bg-marathonYellow">
       <Head>
-        <title>Run the Race of a Lifetime at [Marathon Name] 2025!</title>
+        <title>Run the Race of a Lifetime at Soul Relay 2025!</title>
         <meta name="description" content="Join thousands on [Date] in [City]!" />
-        <meta property="og:title" content="Run the Race of a Lifetime at [Marathon Name] 2025!" />
+        <meta property="og:title" content="Run the Race of a Lifetime at Soul Relay 2025!" />
         <meta property="og:description" content="Join thousands on [Date] in [City]!" />
         <meta property="og:image" content="/assets/marathon-hero.jpg" />
         <link rel="icon" href="/favicon.ico" />
@@ -32,14 +33,14 @@ export default function Home() {
       <Navbar links={navLinks} />
 
       <main>
-        <Hero title="Run the Race of a Lifetime at [Marathon Name] 2025!" subtitle="Join thousands on [Date] in [City]!" />
+        <Hero title="Run the Race of a Lifetime at Soul Relay 2025!" subtitle="Join thousands on [Date] in [City]!" />
         <div id="about">
           <EventOverview />
         </div>
         <RaceDetails />
         <RegistrationCTA />
         <Testimonials />
-        <Sponsors />
+        <AboutUs />
         <div id="faq">
           <FAQ />
         </div>
