@@ -62,7 +62,29 @@ const RaceDetails: React.FC = () => {
           <div className="text-center mb-8">
             <p className="text-lg text-gray-700">In the last 10 years, the total distance run in ultra races is <span className="font-bold text-yellow-500">22,262 km</span>, including <span className="font-bold text-yellow-500">527</span> marathons.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="md:hidden overflow-x-auto pb-4">
+            <div className="flex flex-nowrap gap-4">
+              {raceHistory.map((race, index) => (
+                <div key={index} className="flex-shrink-0 w-[48%] bg-white shadow-lg rounded-lg p-4 border-l-4 border-yellow-400 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center mb-3">
+                      <Calendar className="w-6 h-6 text-yellow-500 mr-3" />
+                      <h4 className="text-lg font-bold text-blue-800">{race.year}</h4>
+                    </div>
+                    <div className="flex items-center mb-2">
+                      <Trophy className="w-5 h-5 text-blue-500 mr-2" />
+                      <p className="text-sm text-gray-700">{race.event}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center mt-3">
+                    <Flag className="w-5 h-5 text-red-500 mr-2" />
+                    <p className="text-sm text-gray-700">{race.distance}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-6 gap-6">
             {raceHistory.map((race, index) => (
               <div key={index} className="bg-white shadow-lg rounded-lg p-4 border-l-4 border-yellow-400 flex flex-col justify-between">
                 <div>
