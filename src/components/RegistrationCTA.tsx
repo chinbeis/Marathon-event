@@ -54,7 +54,6 @@ const RegistrationCTA: React.FC = () => {
     <section id="register" className="bg-yellow-400 py-12 text-center">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-blue-800">Sign Up Today!</h2>
-        <p className="text-lg text-blue-800 mt-2">Early Bird Pricing Ends [Date]</p>
         <div className="mt-4">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
